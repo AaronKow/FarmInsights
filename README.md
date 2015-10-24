@@ -29,11 +29,11 @@ In this analyzer, farmers can analyse the food of consumer demand for crops and 
 >Source:
 >NASS (Quickstats): Commodity > Category: “Production"
 
-##How FarmInsights is built
+#How FarmInsights is built
 FarmInsights is built using an open-source Javascript web application framework called Meteor. To built this application, FarmInsights was built using the packages and plugins as following:
 meteor-base, mobile-experience, mongo, blaze-html-templates, session, jquery, tracker, standard-minifiers, es5-shim, ecmascript, iron:router, twbs:bootstrap, http, fortawesome:fontawesome, mdg:geolocation, accounts-password, useraccounts:bootstrap, useraccounts:iron-routing, manuelschoebel:ms-seo, check, zimme:active-route, russ:weather-icons, momentjs:moment, flot, jqvmap, morrisjs, raphael and jquery-steps.
 
-##Challenges I ran into
+#Challenges I ran into
 As an amateur for handling such big data of records, roughly 1,000~100,000 of records per commodity (barley, corn, wheat, etc…). Most often times, I get to crash my web app during fetching the big data from USDA datasets. So, to reduce this problem and focus on  becoming lite as much as possible, I carefully picked the data for use in each analyzer. Thus, not all commodity covered in my lite application.
 
 #For Testing Purpose,
