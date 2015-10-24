@@ -1,0 +1,71 @@
+<template name="_sidebar">
+	<div class="col-sm-2 col-md-2 sidebar">
+			<div class="row">
+			<!-- uncomment code for absolute positioning tweek see top comment in css -->
+			<div class="absolute-wrapper"> </div>
+			<!-- Menu -->
+			<div class="side-menu">
+				<nav class="navbar navbar-default" role="navigation">
+					<!-- Main Menu -->
+					<div class="side-menu-container">
+						<ul class="nav navbar-nav">
+							<li class="{{isActivePath '/dashboard'}}"><a href="/dashboard"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+
+							<!-- Dropdown-->
+							<li class="panel panel-default {{isActiveRoute regex='harvestAnalyzer'}}" id="dropdown">
+								<a data-toggle="collapse" href="#dropdown-lvl1">
+									<span class="glyphicon glyphicon-leaf"></span> Harvest Analyzer <span class="caret"></span>
+								</a>
+
+								<!-- Dropdown level 1 -->
+								<div id="dropdown-lvl1" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul class="nav navbar-nav">
+											<li><a href="/harvestAnalyzer/crops"><span class="glyphicon glyphicon-chevron-right"></span>Crops</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<!-- Dropdown-->
+							<li class="panel panel-default {{isActiveRoute regex='economicsAnalyzer'}}" id="dropdown">
+								<a data-toggle="collapse" href="#dropdown-lvl3">
+									<span class="glyphicon glyphicon-usd"></span> Economics Analyzer <span class="caret"></span>
+								</a>
+
+								<!-- Dropdown level 1 -->
+								<div id="dropdown-lvl3" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul class="nav navbar-nav">
+											<li><a href="/economicsAnalyzer/animals-and-products"><span class="glyphicon glyphicon-chevron-right"></span>Animals &amp; Products</a></li>
+											<li><a href="/economicsAnalyzer/crops"><span class="glyphicon glyphicon-chevron-right"></span>Crops</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<!-- Dropdown-->
+							<li class="panel panel-default {{isActiveRoute regex='foodAnalyzer'}}" id="dropdown">
+								<a data-toggle="collapse" href="#dropdown-lvl5">
+									<span class="glyphicon glyphicon-cutlery"></span> Food Analyzer <span class="caret"></span>
+								</a>
+
+								<!-- Dropdown level 1 -->
+								<div id="dropdown-lvl5" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul class="nav navbar-nav">
+											<li><a href="/foodAnalyzer/animals-and-products"><span class="glyphicon glyphicon-chevron-right"></span>Animals &amp; Products</a></li>
+											<li><a href="/foodAnalyzer/crops"><span class="glyphicon glyphicon-chevron-right"></span>Crops</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+
+			</div>
+		</div>  		
+	</div>
+</template>
