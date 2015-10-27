@@ -14,12 +14,12 @@ if(Meteor.isServer){
 			if(!lastDatabase[0] || timeChecker >= 1200000){
 
 				/* Fetch data from openweathermap.org */
-				var openWeatherMapData = Meteor.http.call('GET', 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lng + '&units=metric' + '&APPID=4d609c795048ffdaec2f3c9930b897cc');
+				var openWeatherMapData = Meteor.http.call('GET', 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lng + '&units=metric' + '&APPID=' + settings.services.opebWeatherMapDataID );
 				var procOpenWeatherMapData = JSON.parse(openWeatherMapData.content);
 
 
 				/* Fetch data from forecast.io */
-				var forecastIOData = Meteor.http.call('GET', 'https://api.forecast.io/forecast/165f7ee8c5c8b04a912fc3b04bc32955/' + lat + ',' + lng + '/?units=si');
+				var forecastIOData = Meteor.http.call('GET', 'https://api.forecast.io/forecast/' + settings.services.forecastID + '/' + lat + ',' + lng + '/?units=si');
 
 
 				/* Initiate the graph data for the first time */

@@ -5,6 +5,20 @@ Provide farmers with insights about their farm
 Farminsights is a lite application for farmers, consumers and reseachers, so they can use it to analyse the food supply coming from which states and understand the economics of consumer demand. With FarmInsights, they can know how yields have changed over time and this allow them to predict the future crops and prepare for it. Similarly, they can know what is growing well in their area and what isn’t.
 
 
+#How to use it
+1. Clone this repo to `<yourapp>`
+
+  `git clone https://github.com/AaronKow/FarmInsights.git <yourapp>`
+
+2. Remove `.git`
+
+  `cd <yourapp> && rm -rf .git`
+
+3. Configure your settings.services.opebWeatherMapDataID and settings.services.forecastID with your own ID in server folder.
+
+4. Start coding!
+
+
 #Features
 ###Dashboard
 Please allow your GPS for FarmInsights. In dashboard, it provides user to the current weather in your area. Also, it will provide you useful forecast data within 24-hours such as precipitation, wind speed and temperature for your area. Additionally, users can also see the temperature pattern within 48-hours for their area.
