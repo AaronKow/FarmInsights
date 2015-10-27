@@ -14,7 +14,7 @@ if(Meteor.isServer){
 			if(!lastDatabase[0] || timeChecker >= 1200000){
 
 				/* Fetch data from openweathermap.org */
-				var openWeatherMapData = Meteor.http.call('GET', 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lng + '&units=metric' + '&APPID=' + settings.services.opebWeatherMapDataID );
+				var openWeatherMapData = Meteor.http.call('GET', 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lng + '&units=metric' + '&APPID=' + settings.services.openWeatherMapDataID );
 				var procOpenWeatherMapData = JSON.parse(openWeatherMapData.content);
 
 
