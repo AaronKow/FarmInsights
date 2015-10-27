@@ -9,7 +9,10 @@ Farminsights is a lite application for farmers, consumers and reseachers, so the
 ###Dashboard
 Please allow your GPS for FarmInsights. In dashboard, it provides user to the current weather in your area. Also, it will provide you useful forecast data within 24-hours such as precipitation, wind speed and temperature for your area. Additionally, users can also see the temperature pattern within 48-hours for their area.
 >Source:
->Weather forecast data from [Forecast.io](http://forecast.io/)
+>Weather forecast data from Forecast.io
+>
+>Source:
+>City and country data from OpenWeatherMap.org
 
 
 ###Harvest Analyzer
